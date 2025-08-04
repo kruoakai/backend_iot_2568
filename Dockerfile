@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # เปิดพอร์ต 3000 ที่จะใช้สำหรับแอป
-EXPOSE 3000
+EXPOSE 4000
 
 # คำสั่งที่จะรันเมื่อ container เริ่มทำงาน
 CMD ["node", "index.js"]
