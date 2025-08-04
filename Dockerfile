@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # คำสั่งที่จะรันเมื่อ container เริ่มทำงาน
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
