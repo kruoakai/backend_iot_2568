@@ -22,6 +22,7 @@ services:
       MYSQL_DATABASE: power_sensor
       MYSQL_USER: power_user
       MYSQL_PASSWORD: power_password
+      TZ: Asia/Bangkok   # ✅ เพิ่มบรรทัดนี้
     volumes:
       - db_data:/var/lib/mysql
       - ./power_sensor.sql:/docker-entrypoint-initdb.d/power_sensor.sql # Mount ไฟล์ SQL โดยตรง
