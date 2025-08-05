@@ -86,12 +86,10 @@ app.post('/api/control', (req, res) => {
   if (value !== 0 && value !== 1) {
     return res.status(400).json({ error: 'Value must be 0 or 1' });
   }
-
   // ยกเลิก timer เดิม (ถ้ามี)
   if (publishTimer) {
     clearTimeout(publishTimer);
   }
-
   // สร้าง timer ใหม่
   publishTimer = setTimeout(() => {
     const topic = 'esp32/sw01/status';
